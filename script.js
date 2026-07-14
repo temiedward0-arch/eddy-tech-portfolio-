@@ -52,22 +52,4 @@ document.getElementById("lightbox").onclick=function(e){
 function closeImage(){
     document.getElementById("lightbox").style.display = "none";
 }
-function openVideo(videoFile){
-
-    document.getElementById("videoPopup").style.display = "flex";
-
-    document.getElementById("popupVideo").src = videoFile;
-
-    document.getElementById("popupVideo").play();
-
-}
-function closeVideo(){
-
-    document.getElementById("videoPopup").style.display = "none";
-
-    document.getElementById("popupVideo").pause();
-
-    document.getElementById("popupVideo").currentTime = 0;
-
-}
 mediumZoom('.zoomable');
